@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,5 +16,6 @@ namespace BussinessObject.DTOS
         public DateTime? CreatedAt { get; set; }
         public int TypeId { get; set; }
         public bool Status { get; set; }
+       
     }
 }

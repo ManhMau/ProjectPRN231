@@ -13,9 +13,14 @@ namespace BussinessObject.Mapper
             CreateMap<BussinessObject.Models.Type,DocTypeMapper>().ReverseMap();
 
             CreateMap<Document, DocumentDTO>()
-                .ForMember(dest=>dest.TypeName, otp=>otp.MapFrom(src=>src.Type.TypeName))
-                .ReverseMap();
-            CreateMap<Document,DocumentAddDTO>().ReverseMap();
+             .ForMember(dest => dest.TypeName, otp => otp.MapFrom(src => src.Type.TypeName))
+             .ReverseMap();
+            
+            CreateMap<DocumentAddDTO, Document>()
+       
+       .ReverseMap();
+
+            CreateMap<User, UserDTO>().ReverseMap();
         }
     }
 }

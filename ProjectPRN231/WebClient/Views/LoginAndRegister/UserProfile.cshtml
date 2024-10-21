@@ -1,0 +1,97 @@
+﻿@model BussinessObject.DTOS.UserDTO
+
+@{
+    ViewData["Title"] = "User Profile";
+    Layout = null;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">User Profile</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-3 fw-bold">Username:</dt>
+                <dd class="col-sm-9">@Model.UserName</dd>
+
+                <dt class="col-sm-3 fw-bold">Email:</dt>
+                <dd class="col-sm-9">@Model.Email</dd>
+
+                <dt class="col-sm-3 fw-bold">Phone Number:</dt>
+                <dd class="col-sm-9">@Model.PhoneNumber</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-controller="User" asp-action="Index" class="btn btn-secondary me-2">Back to User List</a>
+            <a asp-controller="User" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit Profile</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Light gray background */
+        font-family: 'Arial', sans-serif; /* Modern font */
+    }
+
+    h1 {
+        font-size: 2rem; /* Larger header size */
+        color: #343a40; /* Darker color for header */
+        font-weight: bold; /* Bold header */
+    }
+
+    .card {
+        border-radius: 0.5rem; /* Rounded corners for the card */
+    }
+
+    dt {
+        font-weight: bold; /* Bold for description labels */
+        color: #495057; /* Dark gray for dt elements */
+    }
+
+    dd {
+        color: #343a40; /* Darker color for dd elements */
+        background-color: #e9ecef; /* Light background for values */
+        border-radius: 5px; /* Rounded corners for dd elements */
+        padding: 0.5rem; /* Padding for better appearance */
+        margin: 0; /* Remove margin for a cleaner look */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Button padding for better spacing */
+        font-size: 1rem; /* Button font size */
+        border-radius: 0.25rem; /* Rounded corners for buttons */
+        transition: background-color 0.3s, transform 0.2s; /* Smooth button hover effect */
+    }
+
+    .btn-warning {
+        background-color: #ffc107; /* Warning button color */
+        border: none; /* Remove border */
+    }
+
+        .btn-warning:hover {
+            background-color: #e0a800; /* Darker shade on hover */
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Secondary button color */
+        border: none; /* Remove border */
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268; /* Darker shade on hover */
+            transform: translateY(-2px); /* Slight lift effect on hover */
+        }
+
+    /* Custom styles for layout */
+    .container {
+        max-width: 800px; /* Set a maximum width for the container */
+    }
+
+    .row {
+        margin-bottom: 20px; /* Space between rows */
+    }
+</style>

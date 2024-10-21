@@ -21,4 +21,5 @@ namespace BussinessObject.Models
         public virtual Type Type { get; set; } = null!;
         public virtual ICollection<DocumentUser> DocumentUsers { get; set; }
     }
+
 }

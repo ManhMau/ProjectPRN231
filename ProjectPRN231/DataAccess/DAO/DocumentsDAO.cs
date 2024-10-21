@@ -48,25 +48,38 @@ namespace DataAccess.DAO
                 }
                 return mapper.Map<DocumentDTO>(product);
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
         public async Task AddDocuments(DocumentAddDTO d)
         {
-            if (d == null) throw new ArgumentNullException(nameof(d));
+            if (d == null)
+            {
+                throw new Exception("Document is null");
+            }
             try
             {
-                var documentEntity = mapper.Map<Document>(d);
-                await _context.Documents.AddAsync(documentEntity);
+
+                var documnentEntity = mapper.Map<Document>(d);
+
+
+                await _context.Documents.AddAsync(documnentEntity);
+
+
                 await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(ex.Message);
             }
         }
+
+
+
+
+
         public async Task DeleteDocuments(int id)
         {
             try
@@ -92,37 +105,43 @@ namespace DataAccess.DAO
         {
             if (updateDocument == null)
             {
-                throw new ArgumentNullException(nameof(updateDocument));
+                throw new Exception("Updated Document is null");
             }
+
             try
             {
-                var exitDocuments = await _context.Documents.FindAsync(updateDocument.DocumentId);
-                if (exitDocuments != null)
+
+                var existingDocument = await _context.Documents.FindAsync(updateDocument.DocumentId);
+
+                if (existingDocument == null)
                 {
-                    exitDocuments.Title = updateDocument.Title;
-                    exitDocuments.Description = updateDocument.Description;
-                    exitDocuments.FilePath = updateDocument.FilePath;
-                    exitDocuments.CreatedAt = updateDocument.CreatedAt;
-                    exitDocuments.TypeId = updateDocument.TypeId;
-                    exitDocuments.Status = updateDocument.Status;
-
-                    await _context.SaveChangesAsync();
-
+                    throw new Exception("Document not found");
                 }
+                existingDocument.Title = updateDocument.Title;
+                existingDocument.Description = updateDocument.Description;
+                existingDocument.Status = updateDocument.Status;
+                existingDocument.FilePath = updateDocument.FilePath;
+                existingDocument.CreatedAt = updateDocument.CreatedAt;
+                existingDocument.TypeId = updateDocument.TypeId;
 
+
+
+
+                await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                throw new Exception(ex.Message);
             }
-
         }
+
+
         public async Task<List<DocumentDTO>> SearchDocumentsByTitleAsync(string title)
         {
             if (string.IsNullOrEmpty(title)) throw new ArgumentNullException(nameof(title));
             try
             {
-                var documents = await _context.Documents.Include(x=>x.Type)
+                var documents = await _context.Documents.Include(x => x.Type)
                     .Where(d => d.Title.Contains(title))
                     .ToListAsync();
 
@@ -151,3 +170,4 @@ namespace DataAccess.DAO
     }
 
 }
+

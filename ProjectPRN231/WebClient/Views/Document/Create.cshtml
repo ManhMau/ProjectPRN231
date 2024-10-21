@@ -1,0 +1,108 @@
+﻿@model BussinessObject.DTOS.DocumentViewModel
+
+@{
+    ViewData["Title"] = "Create Document";
+    Layout = null;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Create Document</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label asp-for="TypeId" class="form-label">Document Type:</label>
+                    <select asp-for="TypeId" id="documentType" class="form-control">
+                        @foreach (var type in Model.Type)
+                        {
+                            <option value="@type.Id">@type.TypeName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="TypeId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="FilePath" class="form-label">File Upload</label>
+                    <input type="file" asp-for="FilePath" class="form-control" />
+                    <span asp-validation-for="FilePath" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-3 form-check">
+                    <input asp-for="Status" class="form-check-input" type="checkbox" />
+                    <label asp-for="Status" class="form-check-label">Is Active</label>
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-4 text-center">
+        <a asp-action="Index" class="btn btn-secondary">Back to list</a>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Light gray background */
+        font-family: 'Arial', sans-serif; /* Modern font */
+    }
+
+    h1 {
+        color: #343a40; /* Darker color for header */
+        font-weight: bold; /* Bold header */
+    }
+
+    .card {
+        border-radius: 0.5rem; /* Rounded corners for the card */
+    }
+
+    .form-label {
+        font-weight: bold; /* Bold for labels */
+        color: #495057; /* Dark gray for labels */
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Button padding */
+        font-size: 1rem; /* Button font size */
+        transition: background-color 0.3s; /* Smooth button hover effect */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Primary button color */
+        border: none; /* Remove border */
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+    .btn-secondary {
+        background-color: #6c757d; /* Secondary button color */
+        border: none; /* Remove border */
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268; /* Darker shade on hover */
+        }
+</style>

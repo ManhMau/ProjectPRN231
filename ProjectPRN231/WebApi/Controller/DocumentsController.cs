@@ -1,5 +1,7 @@
 ﻿using BussinessObject.DTOS;
+using BussinessObject.DTOS.Common;
 using BussinessObject.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Interfaces;
 
@@ -7,6 +9,7 @@ namespace WebApi.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
+   
     public class DocumentsController : ControllerBase
     {
         private IDocumentRepository documentRepository;
@@ -56,20 +59,27 @@ namespace WebApi.Controller
         [HttpPut("UpdateDocument")]
         public async Task<IActionResult> UpdateDocument([FromBody] DocumentAddDTO document)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
             try
             {
                 await documentRepository.UpdateDocument(document);
-                return Ok(new { message = "Documents uppdated successfully." });
+                return Ok(new { message = "Document updated successfully." });
+            }
+            catch (KeyNotFoundException knfEx)
+            {
+                return NotFound(new { message = knfEx.Message });
             }
             catch (Exception ex)
             {
-                return BadRequest(new { message = ex.Message });
+                return BadRequest(new { message = "An error occurred while updating the document.", details = ex.Message });
             }
         }
+
+        [Authorize(Roles = UserRole.Admin)]
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteDocument(int id)
         {

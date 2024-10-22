@@ -5,6 +5,7 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using BusinessObject.DTO;
 
 
 namespace WebClient
@@ -214,6 +215,77 @@ namespace WebClient
         }
 
 
+        // 1. Lấy danh sách tất cả GroupMembers
+        public static async Task<List<GroupMemberDTO>> GetListGroupMembers()
+        {
+            string url = "http://localhost:5121/api/GroupMember";
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<List<GroupMemberDTO>>();
+            }
+            return new List<GroupMemberDTO>();
+        }
+
+        // 2. Lấy GroupMember theo Id
+        public static async Task<GroupMemberDTO> GetGroupMemberById(int id)
+        {
+            string url = $"http://localhost:5121/api/GroupMember/{id}";
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<GroupMemberDTO>();
+            }
+            return new GroupMemberDTO();
+        }
+
+        // 3. Tạo mới GroupMember
+        public static async Task<int> CreateGroupMemberAsync(GroupMemberDTO model)
+        {
+            string url = "http://localhost:5121/api/GroupMember";
+            HttpResponseMessage response = await client.PostAsJsonAsync(url, model);
+            return (int)response.StatusCode;
+        }
+
+        // 4. Cập nhật GroupMember
+        public static async Task<int> UpdateGroupMember(GroupMemberDTO model)
+        {
+            string url = $"http://localhost:5121/api/GroupMember/{model.Id}";
+            HttpResponseMessage response = await client.PutAsJsonAsync(url, model);
+            return (int)response.StatusCode;
+        }
+
+        // 5. Xóa GroupMember
+        public static async Task<int> DeleteGroupMember(int id)
+        {
+            string url = $"http://localhost:5121/api/GroupMember/{id}";
+            HttpResponseMessage response = await client.DeleteAsync(url);
+            return (int)response.StatusCode;
+        }
+
+        // 6. Tìm kiếm GroupMember theo tên nhóm (NameGroup)
+        public static async Task<List<GroupMemberDTO>> SearchGroupMembersByName(string nameGroup)
+        {
+            string url = $"http://localhost:5121/api/GroupMember/SearchByNameGroup?nameGroup={nameGroup}";
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<List<GroupMemberDTO>>();
+            }
+            return new List<GroupMemberDTO>();
+        }
+
+        // 7. Sắp xếp GroupMembers theo thuộc tính được chỉ định
+        public static async Task<List<GroupMemberDTO>> SortGroupMembers(string sortBy, string sortDirection)
+        {
+            string url = $"http://localhost:5121/api/GroupMember/SortGroupMembers?sortBy={sortBy}&sortDirection={sortDirection}";
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<List<GroupMemberDTO>>();
+            }
+            return new List<GroupMemberDTO>();
+        }
 
 
     }

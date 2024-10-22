@@ -78,6 +78,9 @@ namespace WebApi
             services.AddTransient<UserDao>();
             services.AddTransient<IUserRepository, UserServices>();
             services.AddTransient<IDataServices, RoleDataServices>();
+
+            services.AddTransient<IGroupMemberRepository, GroupMemberRepository>();
+            services.AddTransient<GroupMemberDAO>();
         }
 
         public void Configure(WebApplication app, IWebHostEnvironment env)

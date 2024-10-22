@@ -76,3 +76,24 @@ D:\Semester8\PRN231\Project231 (1)\Project231\ProjectPRN231\Repository\obj\Debug
 D:\Semester8\PRN231\Project231 (1)\Project231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.pdb
 D:\Semester8\PRN231\Project231 (1)\Project231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
 D:\Semester8\PRN231\Project231 (1)\Project231\ProjectPRN231\Repository\obj\Debug\net6.0\ref\Repository.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\appsettings.json
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\Repository.runtimeconfig.json
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\Repository.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\Repository.pdb
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\BussinessObject.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\DataAccess.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\BussinessObject.pdb
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.sourcelink.json
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.csproj.CopyComplete
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.pdb
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\Repository\obj\Debug\net6.0\ref\Repository.dll

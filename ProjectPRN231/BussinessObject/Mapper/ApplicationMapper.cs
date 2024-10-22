@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BusinessObject.DTO;
 using BussinessObject.DTOS;
 using BussinessObject.Models;
 
@@ -21,6 +22,13 @@ namespace BussinessObject.Mapper
        .ReverseMap();
 
             CreateMap<User, UserDTO>().ReverseMap();
+
+
+            // Ánh xạ giữa GroupMember và GroupMemberDTO
+            CreateMap<GroupMember, GroupMemberDTO>()
+/*        .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))  // Lấy UserId từ GroupMember
+*/        .ReverseMap();
+
         }
     }
 }

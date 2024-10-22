@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebClient\\WebClient.csproj": {}
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebClient\\WebClient.csproj": {}
   },
   "projects": {
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,25 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,8 +121,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
@@ -190,25 +182,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,11 +210,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -286,25 +274,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -318,14 +302,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj"
               }
             }
           }
@@ -396,25 +380,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebClient\\WebClient.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebClient\\WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebClient\\WebClient.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebClient\\WebClient.csproj",
         "projectName": "WebClient",
-        "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebClient\\WebClient.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebClient\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebClient\\WebClient.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebClient\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -428,17 +408,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\Repository\\Repository.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj"
               },
-              "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\WebApi.csproj": {
-                "projectPath": "D:\\Semester8\\PRN231\\Project231 (1)\\Project231\\ProjectPRN231\\WebApi\\WebApi.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\WebApi.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\WebApi\\WebApi.csproj"
               }
             }
           }
@@ -477,7 +457,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -87,3 +87,22 @@ C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\DataAccess\obj
 C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 C:\Users\PC\OneDrive\Documents\GitHub\ProjectPRN231\ProjectPRN231\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\appsettings.json
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.dll
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.dll
+G:\PRN231\New folder\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.pdb
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.sourcelink.json
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.dll
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

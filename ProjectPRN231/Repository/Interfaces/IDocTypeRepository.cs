@@ -9,6 +9,12 @@ namespace Repository.Interfaces
 {
     public interface IDocTypeRepository
     {
-        Task<List<DocTypeMapper>> GetCategories();
+        Task<List<DocTypeMapper>> GetDocumentType();
+        Task<DocTypeMapper> GetDocumentTypeById(int id);
+        Task AddDocumentType(DocTypeMapper docTypeMapper);
+        Task DeleteDocumentType(int id);
+        Task UpdateDocumentType(DocTypeMapper docTypeMapper);
+        Task<List<DocTypeMapper>> SearchByTitle(string title);
+        Task<List<DocTypeMapper>> SortByName(bool descending);
     }
 }

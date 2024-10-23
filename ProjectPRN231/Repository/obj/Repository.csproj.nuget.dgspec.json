@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj": {}
+    "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+    "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\obj\\",
+        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,17 +97,17 @@
         }
       }
     },
-    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+    "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\obj\\",
+        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,8 +121,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
@@ -186,17 +186,17 @@
         }
       }
     },
-    "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj": {
+    "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj",
+        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\Repository\\obj\\",
+        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,11 +210,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               }
             }
           }

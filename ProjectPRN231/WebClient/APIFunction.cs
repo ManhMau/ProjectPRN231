@@ -6,6 +6,8 @@ using System.Net.Http.Json;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 using BusinessObject.DTO;
+using DataAccess.DAO;
+using System.Globalization;
 
 
 namespace WebClient
@@ -286,8 +288,82 @@ namespace WebClient
             }
             return new List<GroupMemberDTO>();
         }
+        
+
+            // 1. Lấy danh sách tất cả DocTypes
+            public static async Task<List<DocTypeMapper>> GetListDocTypes()
+            {
+                string url = "http://localhost:5121/api/DocType/GetAllDocTypes";
+                HttpResponseMessage response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<List<DocTypeMapper>>();
+                }
+                return new List<DocTypeMapper>();
+            }
+
+            // 2. Lấy DocType theo Id
+            public static async Task<DocTypeMapper> GetDocTypeById(int id)
+            {
+                string url = $"http://localhost:5121/api/DocType/GetDocTypeById/{id}";
+                HttpResponseMessage response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<DocTypeMapper>();
+                }
+                return new DocTypeMapper();
+            }
+
+            // 3. Tạo mới DocType
+            public static async Task<int> CreateDocTypeAsync(DocTypeMapper model)
+            {
+                string url = "http://localhost:5121/api/DocType/AddDocType";
+                HttpResponseMessage response = await client.PostAsJsonAsync(url, model);
+                return (int)response.StatusCode;
+            }
+
+            // 4. Cập nhật DocType
+            public static async Task<int> UpdateDocType(DocTypeMapper model)
+            {
+                string url = $"http://localhost:5121/api/DocType/UpdateDocType";
+                HttpResponseMessage response = await client.PutAsJsonAsync(url, model);
+                return (int)response.StatusCode;
+            }
+
+            // 5. Xóa DocType
+            public static async Task<int> DeleteDocType(int id)
+            {
+                string url = $"http://localhost:5121/api/DocType/DeleteDocType/{id}";
+                HttpResponseMessage response = await client.DeleteAsync(url);
+                return (int)response.StatusCode;
+            }
+
+        // 6. Tìm kiếm DocType theo tên (Name)
+            public static async Task<List<DocTypeMapper>> SearchDocTypesByName(string searchDocTypeName)
+            {
+            string url = $"http://localhost:5121/api/DocType?searchDocTypeName={searchDocTypeName}";
+            HttpResponseMessage response = await client.GetAsync(url);
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<List<DocTypeMapper>>();
+            }
+            return new List<DocTypeMapper>();
+            }
 
 
-    }
+
+        // 7. Sắp xếp DocTypes theo tên
+        public static async Task<List<DocTypeMapper>> SortDocTypesByName(string sortBy, string sortDirection)
+        {
+                string url = $"http://localhost:5121/api/DocType/SortByTypeName=sortBy={sortBy}&sortDirection={sortDirection}";
+                HttpResponseMessage response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    return await response.Content.ReadFromJsonAsync<List<DocTypeMapper>>();
+                }
+                return new List<DocTypeMapper>();
+            }
+        }
+
 
 }

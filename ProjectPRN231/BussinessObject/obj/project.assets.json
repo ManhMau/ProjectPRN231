@@ -2782,19 +2782,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+      "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
       "projectName": "BussinessObject",
-      "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\GitHub\\ProjectPRN231\\ProjectPRN231\\BussinessObject\\obj\\",
+      "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

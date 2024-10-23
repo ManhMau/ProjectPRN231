@@ -71,7 +71,7 @@ namespace WebApi
         private void InjectServices(IServiceCollection services)
         {
             // Register services and repositories for dependency injection
-            services.AddTransient<IDocTypeRepository, DocTypeReponsitory>();
+            services.AddTransient<IDocTypeRepository, DocTypeRepository>();
             services.AddTransient<DocTypeDAO>();
             services.AddTransient<IDocumentRepository, DocumentRepository>();
             services.AddTransient<DocumentsDAO>();

@@ -24,22 +24,33 @@ namespace WebClient.Controllers
                 return View(model);
             }
 
+            var user = await APIFunction.GetUserByUserNameAsync(model.UserName);
+
+            if (user == null)
+            {
+                ModelState.AddModelError("", "User not found.");
+                return View(model);
+            }
+
+            if (!user.IsActive)
+            {
+                ModelState.AddModelError("", "Your account is inactive. Please contact support.");
+                return View(model);
+            }
+
             var result = await APIFunction.LoginAsync(model);
 
             if (result.IsSuccess)
             {
-              
                 HttpContext.Session.SetString("UserName", model.UserName);
-               
-             
-
-
                 return RedirectToAction("Index", "Dashboard");
             }
 
             ModelState.AddModelError("", "Login failed. Please try again.");
             return View(model);
         }
+
+
 
         public IActionResult Register()
         {

@@ -1,5 +1,4 @@
-﻿using BusinessObject.DTO;
-using BussinessObject.DTOS;
+﻿using BussinessObject.DTOS;
 using System.Collections.Generic;
 
 namespace Repository.Interfaces

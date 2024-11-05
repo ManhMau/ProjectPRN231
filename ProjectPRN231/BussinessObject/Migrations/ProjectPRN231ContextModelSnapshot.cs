@@ -81,26 +81,29 @@ namespace BussinessObject.Migrations
                 });
 
             modelBuilder.Entity("BussinessObject.Models.GroupMember", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("NameGroup")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                b.Property<string>("NameGroup")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                b.Property<bool>("IsActive")
+                    .IsRequired()
+                    .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                b.Property<string>("Note")
+                    .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("UserId");
+                b.HasKey("Id");
 
-                    b.ToTable("GroupMembers");
-                });
+                b.ToTable("GroupMembers");
+            });
+
 
             modelBuilder.Entity("BussinessObject.Models.Type", b =>
                 {
@@ -346,14 +349,7 @@ namespace BussinessObject.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BussinessObject.Models.GroupMember", b =>
-                {
-                    b.HasOne("BussinessObject.Models.User", "User")
-                        .WithMany("GroupMembers")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
+         
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {

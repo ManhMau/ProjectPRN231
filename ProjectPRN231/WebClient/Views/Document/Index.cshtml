@@ -2,7 +2,16 @@
 @{
     ViewData["Title"] = "Document List";
     var sortOption = ViewData["SortOption"]?.ToString(); // Capture current sort option from ViewData.
+    var message = TempData["Message"] as string;
+    var filePath = TempData["FilePath"] as string;
 }
+@if (!string.IsNullOrEmpty(filePath))
+{
+    <div>
+        <strong>File downloaded at:</strong> @filePath
+    </div>
+}
+
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,13 +30,22 @@
                 {
                     <option value="asc" selected>Sort by Date (Ascending)</option>
                     <option value="desc">Sort by Date (Descending)</option>
+                    <option value="group">Group by File Extension</option>
                 }
-                else
+                else if (sortOption == "desc")
                 {
                     <option value="asc">Sort by Date (Ascending)</option>
                     <option value="desc" selected>Sort by Date (Descending)</option>
+                    <option value="group">Group by File Extension</option>
+                }
+                else if (sortOption == "group")
+                {
+                    <option value="asc">Sort by Date (Ascending)</option>
+                    <option value="desc">Sort by Date (Descending)</option>
+                    <option value="group" selected>Group by File Extension</option>
                 }
             </select>
+
         </form>
 
         <a asp-controller="Document" asp-action="Create" class="btn btn-primary">Create Document</a>
@@ -42,7 +60,7 @@
     <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
             <tr>
-                <th>Document Id</th>
+
                 <th>Title</th>
                 <th>Type</th>
                 <th>Description</th>
@@ -58,7 +76,7 @@
                 foreach (var d in Model)
                 {
                     <tr>
-                        <td>@d.DocumentId</td>
+
                         <td>@d.Title</td>
                         <td>@d.TypeName</td>
                         <td>@d.Description</td>
@@ -68,6 +86,8 @@
                         <td>
                             <a asp-controller="Document" asp-action="Details" asp-route-id="@d.DocumentId" class="btn btn-info btn-sm">Details</a>
                             <a asp-controller="Document" asp-action="Edit" asp-route-id="@d.DocumentId" class="btn btn-warning btn-sm">Edit</a>
+                            <a asp-controller="Document" asp-action="Download" asp-route-id="@d.DocumentId" class="btn btn-success btn-sm">Download</a>
+
                             <form asp-controller="Document" asp-action="Delete" asp-route-id="@d.DocumentId" method="post" class="d-inline">
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this document?');">Delete</button>
                             </form>

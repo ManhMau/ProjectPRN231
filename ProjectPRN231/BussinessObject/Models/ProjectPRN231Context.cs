@@ -61,9 +61,8 @@ namespace BussinessObject.Models
             {
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.NameGroup).IsRequired();
-                entity.HasOne(e => e.User)
-                    .WithMany(u => u.GroupMembers)
-                    .HasForeignKey(e => e.UserId);
+                entity.Property(e => e.IsActive).IsRequired();
+                entity.Property(e => e.Note);
             });
 
             modelBuilder.Entity<Type>(entity =>
@@ -71,6 +70,12 @@ namespace BussinessObject.Models
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.TypeName).IsRequired();
             });
+
+            modelBuilder.Entity<User>()
+           .HasOne(u => u.GroupMember)
+             .WithMany(g => g.Users)
+             .HasForeignKey(u => u.GroupId);
+
 
             OnModelCreatingPartial(modelBuilder);
         }

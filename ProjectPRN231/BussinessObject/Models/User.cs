@@ -8,13 +8,15 @@ namespace BussinessObject.Models
         public User()
         {
             DocumentUsers = new HashSet<DocumentUser>();
-            GroupMembers = new HashSet<GroupMember>();
         }
 
         public bool IsActive { get; set; }
+        public int? GroupId { get; set; }
+
+        public virtual GroupMember? GroupMember { get; set; }
+
 
         public virtual ICollection<DocumentUser> DocumentUsers { get; set; }
-        public virtual ICollection<GroupMember> GroupMembers { get; set; }
     }
 
 }

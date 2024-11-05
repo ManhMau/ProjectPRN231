@@ -1,4 +1,4 @@
-﻿@model BusinessObject.DTO.GroupMemberDTO
+﻿@model BussinessObject.DTOS.GroupMemberDTO
 @{
     Layout = null;
 }
@@ -20,19 +20,29 @@
                     <span asp-validation-for="NameGroup" class="text-danger"></span>
                 </div>
 
-                <!-- User ID Input -->
+                <!-- IsActive Input -->
                 <div class="form-group mb-3">
-                    <label asp-for="UserId" class="form-label">User ID</label>
-                    <input asp-for="UserId" class="form-control" />
-                    <span asp-validation-for="UserId" class="text-danger"></span>
+                    <label asp-for="IsActive" class="form-label">Status</label>
+                    <select asp-for="IsActive" class="form-control">
+                        <option value="true">Active</option>
+                        <option value="false">Inactive</option>
+                    </select>
+                    <span asp-validation-for="IsActive" class="text-danger"></span>
                 </div>
 
-                <!-- Submit Button -->
+                <!-- Note Input -->
+                <div class="form-group mb-3">
+                    <label asp-for="Note" class="form-label">Note</label>
+                    <textarea asp-for="Note" class="form-control"></textarea>
+                    <span asp-validation-for="Note" class="text-danger"></span>
+                </div>
+
                 <button type="submit" class="btn btn-primary">Save Changes</button>
                 <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
             </form>
         </div>
     </div>
+
 </div>
 
 <style>

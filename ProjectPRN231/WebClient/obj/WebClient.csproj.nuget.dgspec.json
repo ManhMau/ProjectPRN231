@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\PRN231\\New folder\\ProjectPRN231\\WebClient\\WebClient.csproj": {}
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\WebClient.csproj": {}
   },
   "projects": {
-    "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,6 +75,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -97,17 +101,17 @@
         }
       }
     },
-    "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,8 +125,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               }
             }
           }
@@ -186,17 +190,17 @@
         }
       }
     },
-    "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,11 +214,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -278,17 +282,17 @@
         }
       }
     },
-    "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -302,14 +306,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj"
               }
             }
           }
@@ -324,6 +328,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DocX": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.30, )"
@@ -348,9 +356,21 @@
               "target": "Package",
               "version": "[6.0.30, )"
             },
+            "Spire.Doc": {
+              "target": "Package",
+              "version": "[12.10.5, )"
+            },
+            "Spire.PDF": {
+              "target": "Package",
+              "version": "[10.10.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.7.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.9.0, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
@@ -359,6 +379,14 @@
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[6.7.1, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -384,17 +412,17 @@
         }
       }
     },
-    "G:\\PRN231\\New folder\\ProjectPRN231\\WebClient\\WebClient.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\PRN231\\New folder\\ProjectPRN231\\WebClient\\WebClient.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\WebClient.csproj",
         "projectName": "WebClient",
-        "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\WebClient\\WebClient.csproj",
-        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "G:\\PRN231\\New folder\\ProjectPRN231\\WebClient\\obj\\",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\WebClient.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -408,17 +436,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\Repository\\Repository.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj"
               },
-              "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\WebApi.csproj": {
-                "projectPath": "G:\\PRN231\\New folder\\ProjectPRN231\\WebApi\\WebApi.csproj"
+              "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj": {
+                "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj"
               }
             }
           }

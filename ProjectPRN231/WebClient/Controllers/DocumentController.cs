@@ -14,26 +14,31 @@ namespace WebClient.Controllers
             {
                 documents = await APIFunction.SearchDocumentsByTitle(searchTitle);
             }
+            else if (sortOption == "group")
+            {
+                documents = await APIFunction.GroupDocument(); // Call the group method
+            }
             else
             {
                 documents = await APIFunction.GetListDocuments();
             }
 
-            // Sort the documents based on the sortOption parameter
+            // Sorting logic (skip if "group" option is selected)
             if (sortOption == "desc")
             {
                 documents = documents.OrderByDescending(d => d.CreatedAt).ToList();
             }
-            else
+            else if (sortOption == "asc")
             {
                 documents = documents.OrderBy(d => d.CreatedAt).ToList();
             }
 
             ViewData["Message"] = TempData["Message"];
-            ViewData["SearchTitle"] = searchTitle; // For retaining the search title in the view
-            ViewData["SortOption"] = sortOption; // For retaining sort order in the view
+            ViewData["SearchTitle"] = searchTitle; // Retain search title in the view
+            ViewData["SortOption"] = sortOption; // Retain sort order in the view
             return View(documents);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Create()
@@ -49,64 +54,109 @@ namespace WebClient.Controllers
             return View(viewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(DocumentDTO model)
+        public async Task<IActionResult> Create(DocumentAddDTO model)
         {
-            int result = await APIFunction.CreateDocumentAsync(model);
+            if (!ModelState.IsValid)
+            {
+                var typeeee = await APIFunction.GetListDocType();
+                var viewModel = new DocumentViewModel
+                {
+                    Type = typeeee
+                };
+                return View(viewModel);
+            }
+
+            var result = await APIFunction.CreateDocumentAsync(model);
+            var types = await APIFunction.GetListDocType();
 
             if (result == 200)
             {
                 TempData["Message"] = "Document created successfully.";
                 return RedirectToAction("Index");
             }
-            else
-            {
-                TempData["Message"] = "Error creating Document. Please try again.";
-            }
-            return View(model);
+
+            TempData["Message"] = "Error creating Document. Please try again.";
+            return View(new DocumentViewModel { Type = types });
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var product = await APIFunction.GetDocumentById(id);
+            // Retrieve the document by its ID
+            var document = await APIFunction.GetDocumentById(id);
             var types = await APIFunction.GetListDocType();
 
-            if (product == null)
+            // Check if the document exists
+            if (document == null || document.DocumentId <= 0)
             {
                 TempData["Message"] = "Document not found.";
                 return RedirectToAction("Index");
             }
 
+            // Populate the view model with the document data
             var viewModel = new DocumentViewModel
             {
-                DocumentId = product.DocumentId,
-                Title = product.Title,
-                Description = product.Description,
-                CreatedAt = DateTime.Now, // Gán thời gian hiện tại nếu CreatedAt là null
-                FilePath = product.FilePath,
-                Status = product.Status,
-                Type = types
+                DocumentId = document.DocumentId,
+                Title = document.Title,
+                Description = document.Description,
+                CreatedAt = document.CreatedAt ?? DateTime.Now, // Use created date if available
+                Status = document.Status,
+                Type = types // Assuming types are needed in the view for selection
             };
 
-            return View(viewModel); // Đảm bảo bạn trả về viewModel
+            // Return the view with the populated view model
+            return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(DocumentDTO model)
+        public async Task<IActionResult> Edit(DocumentAddDTO model)
         {
-            int result = await APIFunction.UpdateDocument(model);
+            // Validate the model state
+            if (!ModelState.IsValid)
+            {
+                TempData["Message"] = "Please correct the errors in the form.";
+                return View(model);
+            }
 
+            // Call UpdateDocument and capture the result
+            int result = await APIFunction.UpdateDocument(model.DocumentId, model); // Pass the DocumentId along with the model
+
+            // Check the result of the update operation
             if (result == 200)
             {
-                TempData["Message"] = "Document update successfully.";
+                TempData["Message"] = "Document updated successfully.";
                 return RedirectToAction("Index");
             }
             else
             {
-                TempData["Message"] = "Error creating Document. Please try again.";
+                TempData["Message"] = "Error updating document. Please try again.";
             }
+
+            // If the update failed, return the same view with the model to show errors
             return View(model);
         }
+        [HttpGet]
+        public async Task<IActionResult> Download(int id)
+        {
+            var (result, filePath) = await APIFunction.DownloadDocument(id); // Gọi phương thức DownloadDocument
+
+            if (result == 200 && filePath != null)
+            {
+                TempData["Message"] = "Document downloaded successfully.";
+                TempData["FilePath"] = filePath; // Lưu đường dẫn tệp vào TempData
+            }
+            else
+            {
+                TempData["Message"] = "Error downloading document. Please try again.";
+            }
+
+            // Redirect to the Index action
+            return RedirectToAction("Index");
+        }
+
+
+
+
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
@@ -136,6 +186,9 @@ namespace WebClient.Controllers
 
             return View(document);
         }
+
+
+
 
     }
 }

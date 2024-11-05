@@ -106,3 +106,39 @@ G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\refint\DataAccess
 G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
 G:\PRN231\New folder\ProjectPRN231\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.dll
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.pdb
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+D:\Semester8\PRN231\PROJECT_PRN231\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\appsettings.json
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.dll
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\bin\Debug\net6.0\BussinessObject.pdb
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache
+C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

@@ -7,9 +7,11 @@ namespace BussinessObject.Models
     {
         public int Id { get; set; }
         public string NameGroup { get; set; } = null!;
-        public string? UserId { get; set; }
+        public bool IsActive { get; set; }
+        public string? Note { get; set; }
 
-        public virtual User? User { get; set; }
+        public ICollection<User> Users { get; set; } = new List<User>();
+
     }
 
 }

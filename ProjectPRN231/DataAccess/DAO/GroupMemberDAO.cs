@@ -14,11 +14,9 @@ namespace DataAccess.DAO
             _context = context;
         }
 
-        // Lấy tất cả các GroupMembers và bao gồm thông tin User
         public async Task<List<GroupMember>> GetAllGroupMembersAsync()
         {
-            return await _context.GroupMembers
-                .Include(gm => gm.User)  // Bao gồm thông tin User để lấy Username
+            return await _context.GroupMembers.Include(x => x.Users)
                 .ToListAsync();
         }
      
@@ -26,8 +24,7 @@ namespace DataAccess.DAO
         // Lấy GroupMember theo Id
         public async Task<GroupMember> GetGroupMemberByIdAsync(int id)
         {
-            return await _context.GroupMembers
-                .Include(gm => gm.User)  // Bao gồm thông tin User
+            return await _context.GroupMembers.Include(x => x.Users)
                 .FirstOrDefaultAsync(gm => gm.Id == id);
         }
 

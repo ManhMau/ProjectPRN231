@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BussinessObject.DTOS;
 using BussinessObject.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,8 @@ namespace DataAccess.DAO
     {
         private readonly ProjectPRN231Context _context;
         private readonly IMapper mapper;
+
+
         public DocumentsDAO(ProjectPRN231Context context, IMapper mapper)
         {
             this.mapper = mapper;
@@ -53,28 +56,28 @@ namespace DataAccess.DAO
                 throw new Exception(ex.Message);
             }
         }
-        public async Task AddDocuments(DocumentAddDTO d)
-        {
-            if (d == null)
-            {
-                throw new Exception("Document is null");
-            }
-            try
-            {
+        /*  public async Task AddDocuments(DocumentAddDTO documentDto)
+          {
+              if (documentDto == null)
+              {
+                  throw new Exception("Document is null");
+              }
 
-                var documnentEntity = mapper.Map<Document>(d);
+              try
+              {
+                  var documentEntity = mapper.Map<Document>(documentDto);
+                  documentEntity.FilePath = documentDto.FilePathString; // Map the new property to the entity
+
+                  await _context.Documents.AddAsync(documentEntity);
+                  await _context.SaveChangesAsync();
+              }
+              catch (Exception ex)
+              {
+                  throw new Exception(ex.Message);
+              }
+          }*/
 
 
-                await _context.Documents.AddAsync(documnentEntity);
-
-
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
 
 
 
@@ -101,40 +104,40 @@ namespace DataAccess.DAO
                 throw new Exception();
             }
         }
-        public async Task UpdateDocuments(DocumentAddDTO updateDocument)
-        {
-            if (updateDocument == null)
-            {
-                throw new Exception("Updated Document is null");
-            }
+        /* public async Task UpdateDocuments(DocumentAddDTO updateDocument)
+         {
+             if (updateDocument == null)
+             {
+                 throw new Exception("Updated Document is null");
+             }
 
-            try
-            {
+             try
+             {
 
-                var existingDocument = await _context.Documents.FindAsync(updateDocument.DocumentId);
+                 var existingDocument = await _context.Documents.FindAsync(updateDocument.DocumentId);
 
-                if (existingDocument == null)
-                {
-                    throw new Exception("Document not found");
-                }
-                existingDocument.Title = updateDocument.Title;
-                existingDocument.Description = updateDocument.Description;
-                existingDocument.Status = updateDocument.Status;
-                existingDocument.FilePath = updateDocument.FilePath;
-                existingDocument.CreatedAt = updateDocument.CreatedAt;
-                existingDocument.TypeId = updateDocument.TypeId;
-
-
+                 if (existingDocument == null)
+                 {
+                     throw new Exception("Document not found");
+                 }
+                 existingDocument.Title = updateDocument.Title;
+                 existingDocument.Description = updateDocument.Description;
+                 existingDocument.Status = updateDocument.Status;
+                 existingDocument.FilePath = updateDocument.FilePath;
+                 existingDocument.CreatedAt = updateDocument.CreatedAt;
+                 existingDocument.TypeId = updateDocument.TypeId;
 
 
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
 
+
+                 await _context.SaveChangesAsync();
+             }
+             catch (Exception ex)
+             {
+                 throw new Exception(ex.Message);
+             }
+         }
+ */
 
         public async Task<List<DocumentDTO>> SearchDocumentsByTitleAsync(string title)
         {
@@ -165,6 +168,26 @@ namespace DataAccess.DAO
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+        public async Task<List<DocumentDTO>> GroupDocumentsByFileExtension()
+        {
+            try
+            {
+                var documents = await _context.Documents.ToListAsync();
+
+                // Nhóm tài liệu theo phần mở rộng của file
+                var groupedDocuments = documents
+                    .GroupBy(doc => Path.GetExtension(doc.FilePath).ToLower())
+                    .SelectMany(g => g.Select(doc => doc))
+                    .ToList();
+
+                // Use AutoMapper to map the document entities to DocumentDTO
+                return mapper.Map<List<DocumentDTO>>(groupedDocuments);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"An error occurred: {ex.Message}", ex);
             }
         }
     }

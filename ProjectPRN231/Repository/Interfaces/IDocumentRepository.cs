@@ -2,6 +2,7 @@
 
 using BussinessObject.DTOS;
 using BussinessObject.Models;
+using System.Threading.Tasks;
 
 namespace Repository.Interfaces
 {
@@ -9,10 +10,11 @@ namespace Repository.Interfaces
     {
         Task<List<DocumentDTO>> GetListDocuments();
         Task<DocumentDTO> GetDocumentById(int id);
-        Task  AddDocument(DocumentAddDTO documentAddDTO);
+
         Task DeleteDocument(int id);
-        Task UpdateDocument(DocumentAddDTO documentDTO);
+
         Task<List<DocumentDTO>> SearchByTitle(string title);
         Task<List<DocumentDTO>> SortByDate(bool descending);
+        Task<List<DocumentDTO>> GroupDocumentsByFileExtension();
     }
 }

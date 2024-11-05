@@ -169,23 +169,19 @@ namespace BussinessObject.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "GroupMembers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NameGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_GroupMembers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_GroupMembers_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id");
-                });
+            name: "GroupMembers",
+            columns: table => new
+            {
+                Id = table.Column<int>(type: "int", nullable: false)
+                    .Annotation("SqlServer:Identity", "1, 1"),
+                NameGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                IsActive = table.Column<bool>(type: "bit", nullable: false),
+                Note = table.Column<string>(type: "nvarchar(max)", nullable: true)
+            },
+            constraints: table =>
+            {
+                table.PrimaryKey("PK_GroupMembers", x => x.Id);
+            });
 
             migrationBuilder.CreateTable(
                 name: "Documents",
@@ -289,10 +285,24 @@ namespace BussinessObject.Migrations
                 table: "DocumentUsers",
                 column: "UserId");
 
+            migrationBuilder.AddColumn<int>(
+      name: "GroupId",
+      table: "AspNetUsers",
+      type: "int",
+      nullable: true);
+
             migrationBuilder.CreateIndex(
-                name: "IX_GroupMembers_UserId",
-                table: "GroupMembers",
-                column: "UserId");
+                name: "IX_AspNetUsers_GroupId",
+                table: "AspNetUsers",
+                column: "GroupId");
+
+            migrationBuilder.AddForeignKey(
+                name: "FK_AspNetUsers_GroupMembers_GroupId",
+                table: "AspNetUsers",
+                column: "GroupId",
+                principalTable: "GroupMembers",
+                principalColumn: "Id");
+
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

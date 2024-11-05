@@ -15,7 +15,6 @@ namespace BussinessObject.DTOS
         public string Email { get; set; } = null!;
         public bool IsActive { get; set; }
 
-        // Có thể thêm các thuộc tính khác nếu cần (ví dụ: vai trò, điện thoại...)
         public string PhoneNumber { get; set; }
     }
 }

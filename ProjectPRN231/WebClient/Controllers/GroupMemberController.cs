@@ -1,4 +1,4 @@
-﻿using BusinessObject.DTO;
+﻿using BussinessObject.DTOS;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebClient.Controllers
@@ -130,12 +130,16 @@ namespace WebClient.Controllers
         {
             var groupMember = await APIFunction.GetGroupMemberById(id);
 
-            if (groupMember == null)
+            if (groupMember == null || groupMember.Users == null || !groupMember.Users.Any())
             {
-                return NotFound();
+                return NotFound("No users found in this group.");
             }
 
-            return View(groupMember);
+            // Chỉ truyền danh sách Users vào view
+            return View(groupMember.Users);
         }
+
+
+
     }
 }

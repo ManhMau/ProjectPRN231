@@ -16,7 +16,7 @@ namespace Repository.Interfaces
         Task<APIResponseModel> Register(RegisterVM model);
         Task<List<UserDTO>> GetUsersAsync();
         Task<UserDTO> GetUserById(string id);
-        Task<IdentityResult> UpdateUserAsync(UserDTO updateUser);
+        Task<IdentityResult> UpdateUserAsync(UserDTOUpdate updateUser);
         Task<IdentityResult> DeleteUserAsync(string id);
         Task<UserDTO> GetUserByNameAsync(string name);
         Task<List<UserDTO>> SearchUsersAsync(string search);

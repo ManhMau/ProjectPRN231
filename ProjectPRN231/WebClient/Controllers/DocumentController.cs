@@ -43,12 +43,13 @@ namespace WebClient.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var types = await APIFunction.GetListDocType();
+            var types = await APIFunction.GetListDocTypes();
 
 
             var viewModel = new DocumentViewModel
             {
-                Type = types
+                Type = types,
+                CreatedAt= DateTime.Now,
             };
 
             return View(viewModel);
@@ -58,7 +59,7 @@ namespace WebClient.Controllers
         {
             if (!ModelState.IsValid)
             {
-                var typeeee = await APIFunction.GetListDocType();
+                var typeeee = await APIFunction.GetListDocTypes();
                 var viewModel = new DocumentViewModel
                 {
                     Type = typeeee
@@ -67,7 +68,7 @@ namespace WebClient.Controllers
             }
 
             var result = await APIFunction.CreateDocumentAsync(model);
-            var types = await APIFunction.GetListDocType();
+            var types = await APIFunction.GetListDocTypes();
 
             if (result == 200)
             {
@@ -84,7 +85,7 @@ namespace WebClient.Controllers
         {
             // Retrieve the document by its ID
             var document = await APIFunction.GetDocumentById(id);
-            var types = await APIFunction.GetListDocType();
+            var types = await APIFunction.GetListDocTypes();
 
             // Check if the document exists
             if (document == null || document.DocumentId <= 0)
@@ -98,6 +99,7 @@ namespace WebClient.Controllers
             {
                 DocumentId = document.DocumentId,
                 Title = document.Title,
+             
                 Description = document.Description,
                 CreatedAt = document.CreatedAt ?? DateTime.Now, // Use created date if available
                 Status = document.Status,

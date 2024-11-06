@@ -8641,11 +8641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8662,14 +8662,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
-              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
+            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj"
             },
-            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\Repository\\Repository.csproj"
+            "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\Repository\\Repository.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {}
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
+    "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
         "projectName": "BussinessObject",
-        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
+        "projectPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\BussinessObject.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\BussinessObject\\obj\\",
+        "outputPath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

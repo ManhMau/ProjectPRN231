@@ -169,6 +169,7 @@ namespace Repository.Services
                 Email = model.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
                 UserName = model.Username,
+                IsActive = true
                
             };
             var resultCreateUser = await userManager.CreateAsync(user, model.Password);
@@ -196,7 +197,7 @@ namespace Repository.Services
             return await userDao.GetUserByIdAsync(id);
         }
 
-        public Task<IdentityResult> UpdateUserAsync(UserDTO updateUser)
+        public Task<IdentityResult> UpdateUserAsync(UserDTOUpdate updateUser)
         {
             return userDao.UpdateUserAsync(updateUser);
         }

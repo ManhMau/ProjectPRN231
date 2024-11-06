@@ -1,4 +1,4 @@
-﻿using BussinessObject.DTOS;
+﻿using BusinessObject.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebClient.Controllers
@@ -65,7 +65,7 @@ namespace WebClient.Controllers
         {
             int result = await APIFunction.CreateGroupMemberAsync(model);
 
-            if (result == 200)
+            if (result == 200 || result == 201)
             {
                 TempData["Message"] = "GroupMember created successfully.";
                 return RedirectToAction("Index");
@@ -130,6 +130,19 @@ namespace WebClient.Controllers
         {
             var groupMember = await APIFunction.GetGroupMemberById(id);
 
+            if (groupMember == null)
+            {
+                return NotFound();
+            }
+
+            return View(groupMember);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ListUserGroup(int id)
+        {
+            var groupMember = await APIFunction.GetGroupMemberById(id);
+
             if (groupMember == null || groupMember.Users == null || !groupMember.Users.Any())
             {
                 return NotFound("No users found in this group.");
@@ -138,8 +151,5 @@ namespace WebClient.Controllers
             // Chỉ truyền danh sách Users vào view
             return View(groupMember.Users);
         }
-
-
-
     }
 }

@@ -81,29 +81,27 @@ namespace BussinessObject.Migrations
                 });
 
             modelBuilder.Entity("BussinessObject.Models.GroupMember", b =>
-            {
-                b.Property<int>("Id")
-                    .ValueGeneratedOnAdd()
-                    .HasColumnType("int");
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                b.Property<string>("NameGroup")
-                    .IsRequired()
-                    .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
-                b.Property<bool>("IsActive")
-                    .IsRequired()
-                    .HasColumnType("bit");
+                    b.Property<string>("NameGroup")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                b.Property<string>("Note")
-                    .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Note")
+                        .HasColumnType("nvarchar(max)");
 
-                b.HasKey("Id");
+                    b.HasKey("Id");
 
-                b.ToTable("GroupMembers");
-            });
-
+                    b.ToTable("GroupMembers");
+                });
 
             modelBuilder.Entity("BussinessObject.Models.Type", b =>
                 {
@@ -140,6 +138,9 @@ namespace BussinessObject.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("GroupId")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -178,6 +179,8 @@ namespace BussinessObject.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -349,7 +352,14 @@ namespace BussinessObject.Migrations
                     b.Navigation("User");
                 });
 
-         
+            modelBuilder.Entity("BussinessObject.Models.User", b =>
+                {
+                    b.HasOne("BussinessObject.Models.GroupMember", "GroupMember")
+                        .WithMany("Users")
+                        .HasForeignKey("GroupId");
+
+                    b.Navigation("GroupMember");
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
@@ -407,6 +417,11 @@ namespace BussinessObject.Migrations
                     b.Navigation("DocumentUsers");
                 });
 
+            modelBuilder.Entity("BussinessObject.Models.GroupMember", b =>
+                {
+                    b.Navigation("Users");
+                });
+
             modelBuilder.Entity("BussinessObject.Models.Type", b =>
                 {
                     b.Navigation("Documents");
@@ -415,8 +430,6 @@ namespace BussinessObject.Migrations
             modelBuilder.Entity("BussinessObject.Models.User", b =>
                 {
                     b.Navigation("DocumentUsers");
-
-                    b.Navigation("GroupMembers");
                 });
 #pragma warning restore 612, 618
         }

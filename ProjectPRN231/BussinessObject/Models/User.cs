@@ -10,7 +10,7 @@ namespace BussinessObject.Models
             DocumentUsers = new HashSet<DocumentUser>();
         }
 
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } 
         public int? GroupId { get; set; }
 
         public virtual GroupMember? GroupMember { get; set; }

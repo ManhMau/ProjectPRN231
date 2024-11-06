@@ -1,4 +1,4 @@
-﻿
+﻿using BusinessObject.DTO;
 using BussinessObject.DTOS;
 using BussinessObject.DTOS.Common;
 using BussinessObject.DTOS.User;
@@ -91,7 +91,7 @@ namespace WebClient
             return -1;
         }
 
-        public static async Task<List<DocTypeMapper>> GetListDocType()
+        public static async Task<List<DocTypeMapper>> GetListDocType() 
         {
             string url = "http://localhost:5121/api/DocType/GetAllCategories";
             HttpResponseMessage response = await client.GetAsync(url);
@@ -231,9 +231,6 @@ namespace WebClient
             }
             return new GroupMemberDTO();
         }
-
-   
-
 
         // 3. Tạo mới GroupMember
         public static async Task<int> CreateGroupMemberAsync(GroupMemberDTO model)

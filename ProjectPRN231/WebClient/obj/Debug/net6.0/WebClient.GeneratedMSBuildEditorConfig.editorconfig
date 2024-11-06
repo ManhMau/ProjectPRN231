@@ -9,127 +9,131 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebClient
 build_property.RootNamespace = WebClient
-build_property.ProjectDir = C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\WebClient\
+build_property.ProjectDir = C:\Users\PC\OneDrive\Documents\ProjectPRN231\WebClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC\OneDrive\Documents\ProjectPRN231-main\ProjectPRN231\WebClient
+build_property.MSBuildProjectDirectory = C:\Users\PC\OneDrive\Documents\ProjectPRN231\WebClient
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Dashboard/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/DocType/Create.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/DocType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jVHlwZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/DocType/Details.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/DocType/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jVHlwZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/DocType/Edit.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/DocType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jVHlwZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/DocType/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/DocType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jVHlwZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Document/Create.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Document/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Document/Details.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Document/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Document/Edit.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Document/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Document/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Document/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/GroupMember/Create.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/GroupMember/Delete.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/GroupMember/Details.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/GroupMember/Edit.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/GroupMember/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Home/About.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/GroupMember/ListUserGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBNZW1iZXJcTGlzdFVzZXJHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Home/Contact.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Home/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/LoginAndRegister/Login.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/LoginAndRegister/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/LoginAndRegister/Register.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/LoginAndRegister/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/LoginAndRegister/UserProfile.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/LoginAndRegister/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RlclxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Shared/Error.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Shared/_LoginLayout.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/User/Details.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/User/Edit.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/User/Index.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/_ViewImports.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/_ViewStart.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/OneDrive/Documents/ProjectPRN231-main/ProjectPRN231/WebClient/Views/Shared/_Layout.cshtml]
+[C:/Users/PC/OneDrive/Documents/ProjectPRN231/WebClient/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-phg8bt3oys

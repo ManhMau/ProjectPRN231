@@ -41,7 +41,7 @@
 
     <div class="form-group mb-3">
         <label asp-for="FilePath" class="form-label">File Upload</label>
-        <input type="text" asp-for="FilePath" class="form-control" />
+        <input type="file" asp-for="FilePath" class="form-control" />
         <span asp-validation-for="FilePath" class="text-danger"></span>
     </div>
 
@@ -55,7 +55,7 @@
     <!-- Display CreatedAt as read-only -->
     <div class="form-group mb-3">
         <label class="form-label">Created At</label>
-        <input type="text" class="form-control" value="@(Model.CreatedAt.HasValue ? Model.CreatedAt.Value.ToString("yyyy-MM-dd") : "N/A")" readonly />
+        <input type="text" class="form-control" value="@(Model.CreatedAt.HasValue ? Model.CreatedAt.Value : "N/A")" readonly />
     </div>
 
     <div class="text-center">

@@ -76,27 +76,34 @@ namespace WebClient.Controllers
             }
 
             var user = await APIFunction.GetUserByIdAsync(id);
+            var groupMembers = await APIFunction.GetListGroupMembers();
             if (user == null)
             {
                 return NotFound();
             }
-            return View(user);
+
+            var viewModel = new UserViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                IsActive = user.IsActive,
+                PhoneNumber = user.PhoneNumber,
+                GroupId = user.GroupId,
+                GroupMembers = groupMembers
+            };
+
+            return View(viewModel);
         }
 
-        // Edit User - POST
         [HttpPost]
         public async Task<IActionResult> Edit(UserDTO model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
             var result = await APIFunction.UpdateUserAsync(model);
             if (result == 200)
             {
-                TempData["Message"] = "User updated successfully."; // Flash message
-                return RedirectToAction(nameof(Index)); // Use nameof for refactoring safety
+                TempData["Message"] = "User updated successfully.";
+                return RedirectToAction(nameof(Index));
             }
 
             ViewBag.ErrorMessage = "Update failed.";

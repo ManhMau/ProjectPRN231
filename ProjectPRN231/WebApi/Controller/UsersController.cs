@@ -124,7 +124,7 @@ namespace WebApi.Controller
         }
 
         [HttpPut("UpdateUser")]
-        public async Task<IActionResult> UpdateUser([FromBody] UserDTO user)
+        public async Task<IActionResult> UpdateUser([FromBody] UserDTOUpdate user)
         {
             if (!ModelState.IsValid)
             {

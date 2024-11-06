@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e4xR0IJ9+bF2xEUVgtNd/2pO41Z7NEzzYGc1WMGAfrutrdqllIzql/BE5AVmCssRw5NorbeTFVqf3kLlTBFffQ==",
+  "dgSpecHash": "G4zBqiW4Bt3/Pq4i43M0RAxCELnykh8nkjLzFScTZdyPLcz7nvMT5gjiA/DbPqSr+fy65UpLen6jWMjqP64cQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231-main\\ProjectPRN231\\WebClient\\WebClient.csproj",
+  "projectFilePath": "C:\\Users\\PC\\OneDrive\\Documents\\ProjectPRN231\\WebClient\\WebClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

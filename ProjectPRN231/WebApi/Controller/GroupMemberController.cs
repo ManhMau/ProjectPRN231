@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BussinessObject.DTOS;
+using BusinessObject.DTO;
 using BussinessObject.Models;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Interfaces;
@@ -24,7 +24,7 @@ namespace WebApi.Controllers
         public async Task<ActionResult<IEnumerable<GroupMemberDTO>>> GetGroupMembers()
         {
             var groupMembers = await _groupMemberRepository.GetAllGroupMembersAsync();
-            return Ok(groupMembers);  // Trả về JSON thay vì View
+            return Ok(groupMembers);  
         }
 
         [HttpGet("{id}")]
@@ -36,7 +36,7 @@ namespace WebApi.Controllers
                 return NotFound();
             }
 
-            return Ok(groupMember);  // Trả về JSON thay vì View
+            return Ok(groupMember);  
         }
 
         [HttpPost]
